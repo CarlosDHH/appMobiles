@@ -2,6 +2,8 @@ import {  StyleSheet, Text,  View } from 'react-native';
 import { Contador } from './Componentes/Contador';
 import { Calculadora } from './Componentes/Calculadora';
 import { Login } from './Componentes/Login';
+import Producto from './Componentes/Producto';
+import Clima from './Componentes/Clima';
 
 export default function App() {
   return (
@@ -17,7 +19,7 @@ export const Encabezado=()=>{
   return(
     <View style={styles.encabezado}>
         <Text style={styles.texto}></Text>
-        <Text style={styles.texto}>Calculadora</Text>
+        <Text style={styles.texto}>Climas</Text>
         <Text style={styles.texto}></Text>
     </View>
   )
@@ -26,7 +28,7 @@ export const Encabezado=()=>{
 export const Cuerpo=()=>{
   return(
     <View style={styles.cuerpo}>
-        <Calculadora/>
+      <Clima/>
     </View>
   )
 }
@@ -71,7 +73,7 @@ export const Pie3=({op1, op2, op3,op4})=>{
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#1f1f1f',
+    backgroundColor: 'white',
     alignItems:'stretch',
     justifyContent: 'center',
   },
@@ -88,7 +90,10 @@ const styles = StyleSheet.create({
     backgroundColor:'black'
   },
   cuerpo:{
-    flex:8
+    flex:1,
+
+    alignItems:'center',
+
   },
   pie:{
     flex:1,

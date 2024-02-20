@@ -7,7 +7,7 @@ export const Calculadora = () => {
   return (
     <View style={estilos.container}>
       <View>
-        <Caja style={estilos.colorCaja} valor={'55'} />
+        <Caja style={estilos.colorCaja} valor={'00000000'} />
       </View>
       <View style={estilos.botonescontainer}>
 
