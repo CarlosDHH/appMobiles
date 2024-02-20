@@ -19,7 +19,7 @@ export const Encabezado=()=>{
   return(
     <View style={styles.encabezado}>
         <Text style={styles.texto}></Text>
-        <Text style={styles.texto}>Climas</Text>
+        <Text style={styles.texto}>Calculadora</Text>
         <Text style={styles.texto}></Text>
     </View>
   )
@@ -28,7 +28,7 @@ export const Encabezado=()=>{
 export const Cuerpo=()=>{
   return(
     <View style={styles.cuerpo}>
-      <Clima/>
+      <Calculadora/>
     </View>
   )
 }
@@ -90,7 +90,7 @@ const styles = StyleSheet.create({
     backgroundColor:'black'
   },
   cuerpo:{
-    flex:1,
+    flex:8,
 
     alignItems:'center',
 
